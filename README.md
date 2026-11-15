@@ -18,9 +18,6 @@ Analyzing medical images and getting information and insights from it is a very 
 - Medical images in real world differ in size, angle, illumination, ..., so Train-time augmentation and Test-time augmentation were used to increase data diversity, prevent overfitting and to help the model be more accurate with different images
 - All the metrics evaluation can be found in `Test evaluation metrics` folder
 
-## Team Members  
-- [Ahmed Mohsen](https://github.com/PrinceEGY)
-- [Yomna Ramdan](https://github.com/Yomna-Ramadan)  
 
 ## Technologies  
 - The app is fully written in `Python 3.10.1`, the user interface was created using `streamlit 1.13.0`
