@@ -1,28 +1,45 @@
-# <div align="center">Medical Imaging Analysis</div>  
-  
+# Medical Image Analysis
 
-Analyzing medical images and getting information and insights from it is a very useful and helpful way to monitor the patient's condition and the ability to predict the possibility of contracting a disease, the greater the amount of data and information collected for each patient, the greater the possibility of diagnosing this patient more efficiently and the extent of the possibility of contracting any disease.
+## Overview
 
+Medical image analysis plays an important role in modern healthcare by helping identify patterns, extract meaningful information, and support clinical decision-making. This project focuses on applying deep learning techniques to medical image analysis to improve the accuracy and efficiency of image-based predictions.
 
-## General Info  
-- In this project we tried to provide multiple and different medical imaging analysis with simple tool to predict the probability of being infected with a disease related to this medical image.
-- This project was created as a **final project** of  Samsung Innovation Campus (SIC) AI training.
-- The application construct is located in the `app.py` file. This file gets input from the user, process it to the appropriate form and use the pretrained models from `Models h5` folder to predict and analyze images.
+The objective is to develop a deep learning pipeline that can process medical images, learn relevant visual features, and generate predictions to assist in medical image assessment.
 
-![](images/app_image.png)  
-  
+![Application Preview](images/app_image.png)
 
-## Modelling and Results
-- All datasets has been processed, modelled and evaluated through a single pipeline.
-- Transfer learning technique was used to increase model efficiency, **InceptionV3** model is used with finetuning to better fit and generalize with different data.
-- Medical images in real world differ in size, angle, illumination, ..., so Train-time augmentation and Test-time augmentation were used to increase data diversity, prevent overfitting and to help the model be more accurate with different images
-- All the metrics evaluation can be found in `Test evaluation metrics` folder
+## Model Development and Results
 
+- Developed a unified pipeline for dataset preprocessing, model training, and evaluation.
+- Implemented **Transfer Learning** using the **InceptionV3** architecture to leverage pretrained feature representations and improve model performance.
+- Fine-tuned the pretrained model to adapt it to the characteristics of the medical imaging datasets.
+- Applied **Train-Time Data Augmentation** to increase dataset diversity, improve generalization, and reduce overfitting.
+- Used **Test-Time Augmentation (TTA)** to improve prediction robustness across variations in image orientation, illumination, and other imaging conditions.
+- Evaluated model performance using multiple evaluation metrics. Detailed results are available in the `Test evaluation metrics` directory.
 
-## Technologies  
-- The app is fully written in `Python 3.10.1`, the user interface was created using `streamlit 1.13.0`
-- Libraries used: `TensorFlow`, `Keras`, `numpy`, `seaborn`, `matplotlib`, `sklearn`, `PIL`, `OpenCV`
+## Technologies and Tools
 
-<br />
+- **Programming Language:** Python 3.10.1
+- **Deep Learning:** TensorFlow, Keras
+- **Web Framework:** Streamlit 1.13.0
+- **Image Processing:** OpenCV, PIL
+- **Data Processing:** NumPy, Scikit-learn
+- **Visualization:** Matplotlib, Seaborn
 
-----
+## Project Structure
+
+```text
+Medical-Imaging-Analysis/
+│
+├── images/
+│   └── app_image.png
+│
+├── Test evaluation metrics/
+│
+├── README.md
+└── ...
+```
+
+## Application
+
+The project includes a Streamlit-based interface that allows users to interact with the trained model and perform medical image analysis through a simple interface.
