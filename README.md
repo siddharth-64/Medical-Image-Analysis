@@ -24,20 +24,6 @@ The objective is to develop a deep learning pipeline that can process medical im
 - **Data Processing:** NumPy, Scikit-learn
 - **Visualization:** Matplotlib, Seaborn
 
-## Project Structure
-
-```text
-Medical-Imaging-Analysis/
-│
-├── images/
-│   └── app_image.png
-│
-├── Test evaluation metrics/
-│
-├── README.md
-└── ...
-```
-
 ## Application
 
 The project includes a Streamlit-based interface that allows users to interact with the trained model and perform medical image analysis through a simple interface.
