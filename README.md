@@ -6,8 +6,6 @@ Medical image analysis plays an important role in modern healthcare by helping i
 
 The objective is to develop a deep learning pipeline that can process medical images, learn relevant visual features, and generate predictions to assist in medical image assessment.
 
-![Application Preview](images/app_image.png)
-
 ## Model Development and Results
 
 - Developed a unified pipeline for dataset preprocessing, model training, and evaluation.
